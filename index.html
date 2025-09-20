@@ -24,28 +24,34 @@
                                 <label for="todoItem">Todo</label>
                                 <input class="form-control" id="todoItem">
                             </div>
-                            <button class="btn btn-primary w-100">Add Todo</button>
-                            <button class="btn btn-primary d-none w-100">Update Todo</button>
+                            <button type="submit" id="addTodo" class="btn btn-primary w-100">Add Todo</button>
+                            <button type="button" id="updateTodo" class="btn btn-primary d-none w-100">Update
+                                Todo</button>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="col-md-6">
                 <ul class="list-group" id="todoContainer">
-                    <li class="list-group-item d-flex justify-content-between">
+                    <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
                         <strong>HTML</strong>
                         <div>
                             <i class="fa-solid fa-user-pen fa-2x text-success" role="button"></i>
                             <i class="fa-solid fa-trash fa-2x text-danger" role="button"></i>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
     </div>
-
+    <div class="loader d-none" id="loader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
 
     <script src="./assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
